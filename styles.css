@@ -50,6 +50,18 @@ p  { margin-bottom: .9rem; }
 .accent-teal { color: var(--teal-bright); }
 .accent-orange { color: var(--orange); }
 
+/* Text hyperlinks */
+main a:not(.btn) {
+  color: var(--teal-bright);
+  text-decoration: underline;
+  text-decoration-color: var(--teal);
+  text-underline-offset: 3px;
+}
+main a:not(.btn):hover {
+  color: var(--orange);
+  text-decoration-color: var(--orange);
+}
+
 /* Buttons */
 .btn {
   display: inline-block; border: none; cursor: pointer;
