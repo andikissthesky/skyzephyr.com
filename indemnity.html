@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indemnity &amp; Release Form — Sky Zephyr</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <img src="assets/logo.png" alt="Sky Zephyr logo">
+  <div class="brand"><span class="sky">Sky</span> <span class="zephyr">Zephyr</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="indemnity.html" class="active">Indemnity&nbsp;Form</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div style="padding: 1.6rem 0 .4rem;">
+    <h1>Indemnity &amp; Release Form</h1>
+    <p class="form-intro">Please complete your details, read the terms, and sign below. Your signed form is timestamped and securely filed.</p>
+    <span class="ref-badge" id="ref-badge">Ref: —</span>
+  </div>
+
+  <form id="indemnity-form" novalidate>
+
+    <!-- CLIENT -->
+    <div class="card">
+      <fieldset>
+        <legend>The Client</legend>
+        <p class="form-intro" style="font-size:.8rem;">(the passenger or any party engaging in the Flights)</p>
+        <label for="clientName">Full name <span class="req">*</span></label>
+        <input type="text" id="clientName" name="clientName" autocomplete="name" required>
+
+        <label for="clientPhone">Contact number <span class="req">*</span></label>
+        <input type="tel" id="clientPhone" name="clientPhone" autocomplete="tel" inputmode="tel" required>
+
+        <div class="grid-2">
+          <div>
+            <label for="clientDob">Date of birth <span class="req">*</span></label>
+            <input type="date" id="clientDob" name="clientDob" required>
+          </div>
+          <div>
+            <label for="clientWeight">Weight (kg) <span class="req">*</span></label>
+            <input type="number" id="clientWeight" name="clientWeight" inputmode="numeric" min="1" max="200" required>
+          </div>
+        </div>
+
+        <label for="clientMedical">Medical conditions (write “none” if not applicable) <span class="req">*</span></label>
+        <textarea id="clientMedical" name="clientMedical" required></textarea>
+      </fieldset>
+    </div>
+
+    <!-- PILOT -->
+    <div class="card">
+      <fieldset>
+        <legend>The Tandem Pilot</legend>
+        <label for="pilotName">Tandem Pilot full name</label>
+        <input type="text" id="pilotName" value="[PILOT FULL NAME]" readonly>
+        <label for="pilotId">Pilot ID number</label>
+        <input type="text" id="pilotId" value="[PILOT ID NUMBER]" readonly>
+        <label for="pilotLicence">Pilot licence number</label>
+        <input type="text" id="pilotLicence" value="[PILOT LICENCE NUMBER]" readonly>
+      </fieldset>
+    </div>
+
+    <!-- TERMS -->
+    <div class="card">
+      <fieldset>
+        <legend>Terms of Indemnity &amp; Release</legend>
+        <div class="terms" id="terms-box">
+          <ol>
+            <li>The Tandem Pilot (“the Pilot”, also referred to as “the Operator”) is operating a flight / series of flights (“the Flights”) wherein the Client may, depending on the request by the Client:
+              <ol>
+                <li>utilise facilities; and/or</li>
+                <li>participate in powered paragliding, paragliding, and hang-gliding and powered forms of either and all related activities.</li>
+              </ol>
+            </li>
+            <li>These terms apply to all persons partaking in the Flights, regardless of whether as a recreational / leisure or training flight, and further whether as a passenger, person receiving instruction, person attached to the paraglider or hang glider, or pilot.</li>
+          </ol>
+
+          <h3>Undertakings and Warranties</h3>
+          <ol start="3">
+            <li>I, the undersigned Client, hereby confirm and agree that:
+              <ol>
+                <li>I am participating in the Flights and I understand that the Pilot will take all reasonable safety precautions during the Flights. However, I understand that the Flights have inherent risks and dangers (including serious injury or death) that no amount of care, caution, instruction, or expertise can eliminate and are conducted in an environment which is controlled by natural elements.</li>
+                <li>I acknowledge that there are inherent risks involved which are unknown to me and/or unforeseeable and that the risks and dangers are constantly changing and are numerous, and not limited to:
+                  <ol>
+                    <li>equipment failure;</li>
+                    <li>changing and unpredictable weather conditions;</li>
+                    <li>collisions with other paragliders;</li>
+                    <li>pilot error; and</li>
+                    <li>negligence of instructors, operators, and other participants.</li>
+                  </ol>
+                </li>
+                <li>I voluntarily and freely choose to incur any and all such risks and dangers referred to above.</li>
+                <li>I shall at all times comply with any reasonable command given in the interest of aviation safety and/or preventing harm to myself and others by the Pilot, the South African Hang Gliding and Paragliding Association (“SAHPA”), and/or the South African Civil Aviation Authority (“SACAA”).</li>
+                <li>I understand that any Tandem flight that I undertake as a passenger will be for the purposes of training only and I have duly completed the first flight student and temporary SAHPA membership requirements.</li>
+                <li>I am solely responsible for all baggage and personal effects whilst undertaking the Flights.</li>
+                <li>I agree to make good all damages to, or loss of, equipment belonging to the Pilot resulting from my use of such equipment.</li>
+                <li>The Pilot has made no representation or promise that I will be successful in learning the art of paragliding or hang gliding, to the point where I will be a safe pilot.</li>
+              </ol>
+            </li>
+          </ol>
+
+          <h3>Medical Provisions</h3>
+          <ol start="4">
+            <li>The Flights are strenuous physical and mental activities. Therefore, I warrant that I am mentally and physically fit and able to participate in the Flights, that I have not been instructed by a medical practitioner not to participate in the Flights and that I do not suffer from any pre-existing medical condition which would jeopardise my health and/or safety on the Flights.</li>
+            <li>I am aware that my personal insurance or medical aid may be void or voidable unless I notify the applicable insurer of my intention to participate in the Flights in any capacity.</li>
+            <li>I warrant that I have adequate private medical insurance in the event of an incident while on and/or travelling to the Flights or acknowledge that I hereby waived the necessity for private medical insurance.</li>
+            <li>I authorise the Pilot and her agents to call for medical care for me or to transport me to a medical facility or hospital if, in the opinion of such personnel, medical attention is needed. I agree that upon my transport to any such medical facility or hospital that none of the aforementioned people shall have any further responsibility for me.</li>
+            <li>Further, I agree to pay all costs associated with such medical care and related transportation provided for me and shall indemnify and hold harmless the Pilot and her agents of and from any costs incurred therein.</li>
+          </ol>
+
+          <h3>Exclusion of Liability</h3>
+          <ol start="9">
+            <li>I, the undersigned Client, my heirs, executors, administrators or assigns or the participants or my estate hereby, now and in the future, unconditionally indemnify, hold harmless and release SAHPA, the Pilot, their heirs, executors, administrators or assigns, and any landowners on whose premises the Flights depart, transit over and arrive on from any and all liability, claims, actions, and causes of action, whatsoever, arising out of any damage, loss, inclusive of my personal injury, my bodily injury, my death, and any damage to my property and/or any other personal or financial injury or loss.</li>
+            <li>The exclusion of liability above applies while upon the premises or in or around aircraft, motor units, paragliders, hang gliders, tow launch systems of any type, harnesses, or other vehicle, whether stopped or in motion, while participating in recreational flying, private flying, demonstrations, training, paragliding flights, tandem paragliding or paraglider towing, hang gliding, hang glider towing, powered forms of either or any other activity, directly, or indirectly, contemplated by this agreement, including all associated activities, for example transportation, whether such loss, damage or injury results from the negligence or gross negligence, either active or passive, of any of the aforementioned people or entities.</li>
+            <li>Furthermore, I declare that if, as a result of my negligence or wilful misconduct, anyone suffers personal injury, death or financial injury, I hereby indemnify the Pilot for any damages she may suffer as a result of defending any action brought against her or being liable to any third person in connection with my aforesaid act or omission.</li>
+          </ol>
+
+          <h3>Governing Law</h3>
+          <ol start="12">
+            <li>This Agreement will in all aspects be governed by and construed under the laws of the Republic of South Africa.</li>
+            <li>Subject to the provisions of this Indemnity, the parties hereto hereby consent and submit to the non-exclusive jurisdiction of the Magistrate’s Court in the Republic of South Africa having jurisdiction in respect of the Client over any dispute arising from or in connection with this Agreement.</li>
+          </ol>
+        </div>
+        <p class="terms-hint">Scroll to read the full terms.</p>
+
+        <label class="checkline">
+          <input type="checkbox" id="ack1" required>
+          <span>I understand the scope, nature and extent of the risks involved in the activities contemplated by this agreement.</span>
+        </label>
+        <label class="checkline">
+          <input type="checkbox" id="ack2" required>
+          <span>I have read and understood the terms of this Indemnity and Release, fully understand its contents and implications, sign it of my own free will, and agree to be bound by the terms of same.</span>
+        </label>
+      </fieldset>
+    </div>
+
+    <!-- SIGNING -->
+    <div class="card">
+      <fieldset>
+        <legend>Sign</legend>
+
+        <label for="signedAt">Signed at (location)</label>
+        <input type="text" id="signedAt" name="signedAt" value="Signal Hill, Cape Town">
+
+        <label>Client signature <span class="req">*</span></label>
+        <div class="sig-wrap">
+          <canvas class="sigpad" id="sig-client"></canvas>
+          <div class="sig-hint" id="hint-client">Sign here with your finger</div>
+        </div>
+        <div class="sig-tools">
+          <span class="timestamp-note" id="ts-note">Date &amp; time recorded on submission</span>
+          <button type="button" class="btn btn-ghost" data-clear="sig-client">Clear</button>
+        </div>
+
+        <!-- Under 18 -->
+        <div class="toggle-section" style="margin-top:1.2rem;">
+          <label class="checkline">
+            <input type="checkbox" id="isMinor">
+            <span>The Client is under 18 years of age (parent / legal guardian must consent and sign)</span>
+          </label>
+          <div id="guardian-section" class="hidden">
+            <label for="guardianName">Parent / legal guardian full name (warrants that s/he is duly authorised thereto) <span class="req">*</span></label>
+            <input type="text" id="guardianName">
+            <label>Parent / legal guardian signature <span class="req">*</span></label>
+            <div class="sig-wrap">
+              <canvas class="sigpad" id="sig-guardian"></canvas>
+              <div class="sig-hint" id="hint-guardian">Guardian signs here</div>
+            </div>
+            <div class="sig-tools">
+              <span></span>
+              <button type="button" class="btn btn-ghost" data-clear="sig-guardian">Clear</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Witness (optional) -->
+        <div class="toggle-section" style="margin-top:.4rem;">
+          <label class="checkline">
+            <input type="checkbox" id="hasWitness">
+            <span>Add a witness (optional)</span>
+          </label>
+          <div id="witness-section" class="hidden">
+            <label for="witnessName">Witness full name</label>
+            <input type="text" id="witnessName">
+            <label>Witness signature</label>
+            <div class="sig-wrap">
+              <canvas class="sigpad" id="sig-witness"></canvas>
+              <div class="sig-hint" id="hint-witness">Witness signs here</div>
+            </div>
+            <div class="sig-tools">
+              <span></span>
+              <button type="button" class="btn btn-ghost" data-clear="sig-witness">Clear</button>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submit-btn" style="margin-top:1.4rem;">Sign &amp; Submit</button>
+        <div id="status-msg"></div>
+
+        <p class="legal-note">NOTE: In accordance with the Electronic Communications and Transactions Act No 25 of 2002, this indemnity may be signed electronically. Your submission is timestamped automatically.</p>
+      </fieldset>
+    </div>
+  </form>
+</main>
+
+<footer class="site">
+  <p>Sky Zephyr · Signal Hill, Cape Town · skyzephyr.com</p>
+</footer>
+
+<script>
+/* ================= CONFIG ================= */
+/* Paste your Google Apps Script Web App URL between the quotes (see README.md) */
+const APPS_SCRIPT_URL = "";
+/* ========================================== */
+
+/* --- Form reference number --- */
+const now0 = new Date();
+const pad = n => String(n).padStart(2, "0");
+const refNo = `SZ-${now0.getFullYear()}${pad(now0.getMonth()+1)}${pad(now0.getDate())}-${pad(now0.getHours())}${pad(now0.getMinutes())}${pad(now0.getSeconds())}`;
+document.getElementById("ref-badge").textContent = "Ref: " + refNo;
+
+/* --- Signature pads --- */
+class SigPad {
+  constructor(canvas, hint) {
+    this.c = canvas; this.hint = hint;
+    this.ctx = canvas.getContext("2d");
+    this.dirty = false; this.drawing = false;
+    this.resize();
+    new ResizeObserver(() => this.resize()).observe(canvas);
+    canvas.addEventListener("pointerdown", e => this.start(e));
+    canvas.addEventListener("pointermove", e => this.move(e));
+    window.addEventListener("pointerup", () => this.drawing = false);
+  }
+  resize() {
+    const r = this.c.getBoundingClientRect();
+    if (r.width === 0) return;
+    const dpr = window.devicePixelRatio || 1;
+    // preserve current drawing
+    const prev = this.dirty ? this.c.toDataURL() : null;
+    this.c.width = r.width * dpr; this.c.height = r.height * dpr;
+    this.ctx.scale(dpr, dpr);
+    this.ctx.lineWidth = 2.2; this.ctx.lineCap = "round"; this.ctx.lineJoin = "round";
+    this.ctx.strokeStyle = "#221d1a";
+    if (prev) { const img = new Image(); img.onload = () => this.ctx.drawImage(img, 0, 0, r.width, r.height); img.src = prev; }
+  }
+  pos(e) { const r = this.c.getBoundingClientRect(); return [e.clientX - r.left, e.clientY - r.top]; }
+  start(e) {
+    e.preventDefault(); this.c.setPointerCapture(e.pointerId);
+    this.drawing = true; this.dirty = true;
+    if (this.hint) this.hint.style.display = "none";
+    const [x, y] = this.pos(e);
+    this.ctx.beginPath(); this.ctx.moveTo(x, y); this.ctx.lineTo(x + .1, y + .1); this.ctx.stroke();
+  }
+  move(e) {
+    if (!this.drawing) return; e.preventDefault();
+    const [x, y] = this.pos(e); this.ctx.lineTo(x, y); this.ctx.stroke();
+  }
+  clear() {
+    this.ctx.save(); this.ctx.setTransform(1,0,0,1,0,0);
+    this.ctx.clearRect(0, 0, this.c.width, this.c.height); this.ctx.restore();
+    this.dirty = false; if (this.hint) this.hint.style.display = "flex";
+  }
+  dataURL() { return this.c.toDataURL("image/png"); }
+}
+
+const pads = {
+  "sig-client":  new SigPad(document.getElementById("sig-client"),  document.getElementById("hint-client")),
+  "sig-guardian": new SigPad(document.getElementById("sig-guardian"), document.getElementById("hint-guardian")),
+  "sig-witness": new SigPad(document.getElementById("sig-witness"), document.getElementById("hint-witness")),
+};
+document.querySelectorAll("[data-clear]").forEach(b =>
+  b.addEventListener("click", () => pads[b.dataset.clear].clear()));
+
+/* --- Toggle sections --- */
+const toggle = (chk, sec) => document.getElementById(chk).addEventListener("change", e =>
+  document.getElementById(sec).classList.toggle("hidden", !e.target.checked));
+toggle("isMinor", "guardian-section");
+toggle("hasWitness", "witness-section");
+
+/* --- Submit --- */
+const form = document.getElementById("indemnity-form");
+const msg = document.getElementById("status-msg");
+const btn = document.getElementById("submit-btn");
+
+function fail(text) { msg.className = "err"; msg.textContent = text; btn.disabled = false; btn.textContent = "Sign & Submit"; }
+
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  msg.className = ""; msg.textContent = "";
+
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  if (!pads["sig-client"].dirty) return fail("Please sign in the client signature box.");
+  const isMinor = document.getElementById("isMinor").checked;
+  if (isMinor && (!document.getElementById("guardianName").value.trim() || !pads["sig-guardian"].dirty))
+    return fail("Please add the parent/guardian name and signature.");
+
+  btn.disabled = true; btn.textContent = "Submitting…";
+
+  const ts = new Date();
+  const payload = {
+    ref: refNo,
+    timestampISO: ts.toISOString(),
+    timestampLocal: ts.toLocaleString("en-ZA", { dateStyle: "full", timeStyle: "long" }),
+    signedAt: document.getElementById("signedAt").value.trim() || "Signal Hill, Cape Town",
+    client: {
+      fullName: document.getElementById("clientName").value.trim(),
+      contactNumber: document.getElementById("clientPhone").value.trim(),
+      dateOfBirth: document.getElementById("clientDob").value,
+      weightKg: document.getElementById("clientWeight").value,
+      medicalConditions: document.getElementById("clientMedical").value.trim(),
+    },
+    pilot: {
+      fullName: document.getElementById("pilotName").value,
+      idNumber: document.getElementById("pilotId").value,
+      licenceNumber: document.getElementById("pilotLicence").value,
+    },
+    guardian: isMinor ? { fullName: document.getElementById("guardianName").value.trim(), signature: pads["sig-guardian"].dataURL() } : null,
+    witness: document.getElementById("hasWitness").checked && document.getElementById("witnessName").value.trim()
+      ? { fullName: document.getElementById("witnessName").value.trim(), signature: pads["sig-witness"].dirty ? pads["sig-witness"].dataURL() : null } : null,
+    clientSignature: pads["sig-client"].dataURL(),
+    acknowledgements: ["risk scope understood", "terms read and accepted"],
+  };
+
+  if (!APPS_SCRIPT_URL) return fail("Submission endpoint not configured yet. Please tell the pilot (site owner) to set APPS_SCRIPT_URL — see README.md.");
+
+  try {
+    const res = await fetch(APPS_SCRIPT_URL, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" }, // avoids CORS preflight for Apps Script
+      body: JSON.stringify(payload),
+    });
+    const out = await res.json().catch(() => ({}));
+    if (!res.ok || out.status === "error") throw new Error(out.message || "Server error");
+    msg.className = "ok";
+    msg.innerHTML = `✔ Signed and submitted successfully.<br>Reference: <strong>${refNo}</strong><br>Timestamp: ${payload.timestampLocal}`;
+    btn.textContent = "Submitted ✔";
+    form.querySelectorAll("input, textarea, button").forEach(el => { if (el !== btn) el.disabled = true; });
+  } catch (err) {
+    fail("Could not submit — please check your connection and try again. (" + err.message + ")");
+  }
+});
+</script>
+
+</body>
+</html>
